@@ -1,0 +1,290 @@
+*{margin: 0;
+padding: 0;
+}
+
+header{
+    color:#a16969;
+    text-align: right;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgba(181, 130, 130, 0.5);
+    padding: 3px;
+}
+
+
+
+
+#banner {
+    background-color: #6e6a57;
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    background-attachment: fixed;
+
+    
+    
+}
+.logo {
+    width: 100px;
+    position: absolute;
+    top:20px;
+    left: 30px;
+}
+
+.title{
+    text-align: center;
+    
+    
+    
+
+}
+
+.title  h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #4d4a43;
+    position: absolute;
+    top: 40%;
+    left:24%;
+    font-size: 70px;
+    -webkit-text-stroke: 0.1vw #161414;
+
+
+}
+
+.title h1:before{
+    content:attr(data-text );
+    position: absolute;
+    color: #7e7765;
+    -webkit-text-stroke: 0vw #a47c1f;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0% ,10% ,100%
+    {width: 0;}
+    70%,90%
+    {width: 100%;}
+}
+.title p{
+    color: #564a40dd;
+    position: absolute;
+    top: 70%;
+    left: 52%;
+    font-size: 40px;
+
+}
+
+
+
+#navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    top:0;  
+    position: fixed;
+    background-color: rgba(44, 41, 34, 0.5);
+    padding-top:10px;
+    z-index: 100;
+    
+    
+
+
+}
+#navbar img{
+    top:0;
+    width: 6%
+    
+}
+
+#navbar ul li  {
+    
+    display:inline;
+    list-style: none;
+    color:#4c3030;
+    font-style: none;
+    margin: 20px;
+    float:left;
+    
+    
+    
+}
+#navbar ul li a {
+    font-family: 'Times New Roman', Times, serif;
+    color: #6d6b67;
+    text-decoration: none;
+    padding: 20px;
+    padding-top: 40px;
+    margin: 0;
+    /* margin-left: 40px; */
+    transition: 0.25s;
+    
+     
+}
+
+
+#navbar ul li a:hover{
+
+    background-color: rgba(124, 139, 101, 0.6);
+    color: rgba(98, 83, 83, 0.8);
+}
+    
+
+
+#navbar button {
+    position: relative;
+    top:0;
+    margin-top: 7px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:4px;
+    padding-bottom: 4px;
+    border-color: #624a4a;
+    background-color: #83794c;
+    border-radius: 20px;
+    color: #262424;
+    transition: 0.25s;
+}
+#navbar button:hover{
+    background-color:rgba(203, 188, 220, 0.4);
+    color:#e6e1e1;
+    border-color: #a79c9c;
+    cursor: pointer;
+
+    
+}
+#wedding{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+#wedding img{
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    margin-left: 100px;
+    border-radius: 300px;
+    background: linear-gradient(45deg,#262424,#6d6b67);
+    
+}
+#wedding p{
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 90px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #7e7765;
+    text-align: center;
+    line-height: 40px;
+}
+.sample-imgs{
+    display: flex;
+    flex-wrap: nowrap;
+    top: 40%;
+}
+.sample-imgs img{
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    margin: 10px;
+  
+}
+
+
+
+#contact{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #a1a0a0;
+   
+    width: 100%;
+}
+#contact img{
+    width: 90px;
+    position: relative;
+}
+
+.logoo{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+.logoo h2 {
+    padding-left: 30px;
+    padding-top: 25px;
+    color:#ffffff
+}
+
+.endimg img {
+    width: 200px;
+    margin-left: 43%;
+    margin-top: 30px;
+
+
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location{
+    margin-left: 30px;
+    font-size: 16px;
+}
+.contact{
+    font-size: 16px;
+    margin-right: 600px;
+    
+}
+.contact p{
+    text-decoration: none;
+    
+}
+@media(max-device-width:450px)
+{
+
+    
+    #banner{
+        width:1000px ;
+
+    }
+    #navbar{
+        padding: 40PX;
+       }
+       #navbar img{
+        width: 9%;
+        left: 0;
+       }
+       #navbar ul li a {
+        font-size: 20px;
+       }
+
+       #wedding{
+        display: flex;
+        flex-wrap: wrap;
+        
+       }
+       #wedding img{
+        width: 600px;
+        height: 600px;
+        margin-left: 200px;
+       }
+       #wedding p {
+        font-size: 40px;
+        line-height: 60px;
+        margin-left: 100px;
+        margin-right: 10;
+       }
+       .endimg img {
+        margin-left: 390px;
+        width: 360px;
+     }
+    
+     #contact{
+        width: 1100px;
+     }
+}

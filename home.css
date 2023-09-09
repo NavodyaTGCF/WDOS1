@@ -1,0 +1,1088 @@
+/* Main CSS for the 5 main pages */
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* HOME PAGE CSS */
+:root{
+    --text-color:rgb(145, 144, 144); 
+    
+}
+
+header{
+    color:#a16969;
+    text-align: right;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgba(218, 200, 200, 0.5);
+    padding: 3px;
+}
+
+
+
+
+#banner {
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    background-attachment: fixed;
+
+    
+    
+}
+.logo {
+    width: 100px;
+    position: absolute;
+    top:20px;
+    left: 30px;
+}
+
+.title{
+    text-align: center;
+    
+    
+    
+
+}
+
+.title  h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left:37%;
+    font-size: 50px;
+
+
+}
+.title p{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    font-size: 20px;
+
+}
+.buttons{
+    position: absolute;
+    top: 60%;
+    padding: 9px;
+    align-items: center;
+    background: transparent;
+    border-radius: 15px;
+    border-color:  #ffffff;
+    border-width: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: 0.25s;
+}
+.buttons :hover{
+    
+    background-color: rgba(100, 48, 48, 0.3);
+    border-color: #a16969;
+    color: #e6e1e1;
+    cursor: pointer;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    top:0;  
+    position: fixed;
+    background-color: rgba(81, 31, 31, 0.5);
+    padding-top:10px;
+    z-index: 100;
+    
+    
+
+
+}
+#navbar img{
+    top:0;
+    width: 6%
+    
+}
+
+#navbar ul li  {
+    
+    display:inline;
+    list-style: none;
+    color:#ffffff;
+    font-style: none;
+    margin: 20px;
+    float:left;
+    
+    
+    
+}
+#navbar ul li a {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    padding-top: 40px;
+    margin: 0;
+    /* margin-left: 40px; */
+    transition: 0.25s;
+    
+     
+}
+
+
+#navbar ul li a:hover{
+
+    background-color: rgba(104, 67, 67, 0.6);
+    color: rgba(217, 177, 177, 0.8);
+}
+    
+
+
+#navbar button {
+    position: relative;
+    top:0;
+    margin-top: 7px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:4px;
+    padding-bottom: 4px;
+    border-color: #ffffff;
+    transition: 0.25s;
+}
+#navbar button:hover{
+    background-color:rgba(211, 194, 194, 0.4);
+    color:#e6e1e1;
+    border-color: #a16969;
+    cursor: pointer;
+
+    
+}
+.introduction h3{
+    color: #7e7c77;
+    font-size: 25px;
+    text-align: center;
+
+}
+.introduction h4{
+    text-align: center;
+    color: #baa6a6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.wedding_hall{
+    margin-top: 100px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+    margin-left: 50px;
+   
+}
+/*  */
+
+
+
+.wed_img img {
+    
+    transition: opacity 0.25s ease;
+    
+   
+    
+}
+.wed_img img:hover{
+    opacity: 0.4;
+}
+
+
+
+.wed_description{
+    text-align: center;
+    z-index: 20;
+}
+.wed_description h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wed_description p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 29px;
+    color:var(--text-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.accomedation{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 200px;
+    
+}
+.acc_image img{
+    width: 500px;
+   
+
+    
+}
+
+.acc_image img {
+    transition: opacity 0.25s ease;
+    
+   
+    
+}
+.acc_image:hover{
+    opacity: 0.4;
+}
+
+.acc_description{
+    text-align: center;
+    
+}
+.acc_description h2 {
+    text-align: center;
+    margin-top: 40px;
+    color:var(--text-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.acc_description p {
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 29px;
+    color:var(--text-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.resturantz {
+    margin-left: 40px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+.resturantes h2 {
+    text-align: center;
+    margin-top: 40px;
+    color:var(--text-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.resturantes p {
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    line-height: 29px;
+    color:var(--text-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about3 img{
+    margin-bottom: 20px;
+
+
+}
+.rest_images img{
+    width: 500px;
+}
+.rest_images img {
+    transition: opacity 0.25s ease;
+    
+   
+    
+}
+.rest_images img:hover{
+    opacity: 0.4;
+}
+
+.advent img{
+    width: 1000px;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 120px;
+    transition: opacity 0.25s ease;
+}
+.advent img:hover {
+    opacity: 0.7;
+    
+    
+   
+    
+}
+
+
+.advent h2{
+    text-align: center;
+    color: var(--text-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.advent p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 29px;
+    color:var(--text-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.advent ul {
+    text-align: center;
+    line-height: 30px;
+    color: #b9a5a5;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+.comments{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.comments p {
+
+    width: 100%;
+    text-align: center;
+    color:rgb(126, 91, 91);
+    line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#contact{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #a1a0a0;
+   
+    width: 100%;
+}
+#contact img{
+    width: 90px;
+    position: relative;
+}
+
+.logoo{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+.logoo h2 {
+    padding-left: 30px;
+    padding-top: 25px;
+    color:#ffffff
+}
+
+.endimg img {
+    width: 200px;
+    margin-left: 43%;
+    margin-top: 30px;
+
+
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location{
+    margin-left: 30px;
+    font-size: 16px;
+}
+.contact{
+    font-size: 16px;
+    margin-right: 600px;
+    
+}
+.contact p{
+    text-decoration: none;
+    
+}
+
+
+/* -RESTURANT PAGE CSS starts from here- */
+
+#rest {
+    background:url(images/Modern\ Photo\ Collage\ and\ Quote\ Ripped\ Paper\ Instagram\ Story\ .png);
+    background-size: cover;
+    height: 700px;
+
+    
+    
+    background-attachment: fixed;
+
+}
+
+.menu{
+    color: rgb(187, 227, 242);
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu:hover{
+    text-decoration: underline whitesmoke; 
+}
+
+
+
+
+
+
+.img-asian img{
+    width: 1208px;
+    
+}
+
+.restcontainer1{
+    width: 100%;
+    align-items: center;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0;
+    
+}
+.asiandescript{
+    width: 1210px;
+    height: 700px;
+    background-color: rgb(11, 11, 11);
+    filter: blur(0.4);
+    /* opacity: 0.4; */
+  }
+  .asiandescript h1{
+    padding-top: 30px;
+    font-size: 50px;
+    color: #ffffff;
+    opacity: 0.6;
+
+
+  }
+.asiandescript p {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f8f4f4;
+    line-height: 50px;
+    padding: 20px;
+    opacity: 0.4;
+}
+.asianfood {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.asianfood img {
+    width: 50%px;
+    height: 400px;
+    margin: 3px;
+}
+
+.rest-bev {
+    display: flex;
+    flex-wrap: nowrap;
+
+
+}
+.rest-bev img{
+    width: 50%;
+    margin: 3px;
+    height: 400px;
+}
+video {
+    
+    max-width:100%;
+
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(181, 164, 164, 0.1);
+  }
+.video h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    line-height: 70px;
+
+}
+.events {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+}
+.events h2 {
+    color: #a16969;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.btn1{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border-color: #a16969;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+
+}
+.btn2{
+    margin-top: 10px;
+    margin-left: 20px;
+    border-color: #a16969;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+}
+.btn1 a {
+    text-decoration: none;
+    color: #281a1a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.btn2 a {
+    text-decoration: none;
+    color: #281a1a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn1 .btn2:hover{
+    background-color: rgba(100, 48, 48, 0.3);
+    border-color: #a16969;
+    color: #e6e1e1;
+    cursor: pointer;
+}
+
+
+
+
+/* -ADVENTURE PAGE CSS starts from here-*/
+
+.backvid{
+    position: absolute;
+    z-index: -1;
+    background-attachment: fixed;
+
+
+}
+.activities{
+    background-color: #9c9c9cde;
+    padding: 50px;
+    text-align: center;
+}
+
+.activities h2{
+    color: #e2d7d7;
+    font-size: 50px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    border: none;
+    padding: 10px;
+}
+
+.grid-item {
+    border: 2PX solid #e4e2e2;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+.grid-container img{
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    
+    
+  }
+.grid-container h3 {
+    color: #938c8c;
+    font-size: 40px;
+    opacity: 0.7;
+  }
+.grid-container p {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 40px;
+    color: #9c8b8b;
+    padding-right: 0;
+    opacity: 0.8;
+}
+.advent-map{
+    margin-left: 30px;
+}
+.advent-map h2{
+    color: #786b6e;
+    font-size: 30px;}
+
+iframe{
+    width:500px;
+    height:400px; 
+}
+
+
+/* -BRANCHES PAGE CSS starts from here-*/
+
+.booking{
+    background:url(images/branches\ background.jpg);
+    background-size: cover;
+    height: 350px;
+
+    
+    
+    background-attachment: fixed;
+}
+
+.booking-topic h1 {
+    text-align: center;
+    color: #e7d4b5;
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 60px;
+}
+.booking-topic h2{
+    font-size: 30px;
+    color: #d6cdb7;
+    margin-left: 20px;
+}
+
+.branches {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+    padding: 0;
+    
+    
+}
+  
+.grid-item2 {
+   
+    border:  solid rgb(224, 217, 217);
+    border-width: 0;
+    border-radius: 20px;
+    background-color: #f5f4f2;
+
+    padding: 10px;
+    text-align: center;
+  }
+.grid-item2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 300px;
+    margin-right: 70px;
+    margin-left: 20px;
+}
+.grid-item2 h4{
+    font-size: 27px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #786b6e;
+    opacity: 0.6;
+}
+
+.grid-item2 p{
+    color: #786b6e;
+
+}
+.img-map{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.maps{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+/* BOOKING PAGE CSS Starts from here */
+.booking-topic{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 70px;
+    padding: 30px;
+}
+
+.checkin-out{
+    margin-top: 100px;
+    font-size: 30px;
+    background-color: #8d7373;
+    padding: 10px;
+    color: #4b3338;
+    justify-content: center;
+}
+#month{
+    background-color: #dbc3c8;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #3a2f19;
+    font-size: 15px;
+    border-radius: 20px;
+    
+}
+
+.container{
+   background-color: #ebdddd;
+   margin-top: 40px;
+   margin-left: 40px;
+   margin-right: 40px;
+   padding-top: 30px;
+   padding-left: 400px;
+   padding-right: 300px;
+   padding-bottom: 60px;
+   line-height: 60px;
+   color: #1c1a1a;
+   font-size: 20px;
+}
+.container h2{
+    color: #846c6c;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.group{
+    background-color: #e7d4d8;
+    padding: 30px;
+    border-radius: 20px;
+    color: #281a1a;
+    
+}
+#text{
+    background-color: #f1e8e8;
+    border-radius: 10px;
+    border-color: #a1a0a0;
+    color: #281a1a;
+    
+}
+.submit{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    background-color: #efe4e6;
+    border-color: #ccc;
+    color: #3f2b2b;}
+
+
+
+
+
+
+
+
+/* responsive under the max-width:450px */
+
+@media(max-device-width:450px)
+{
+
+    /* Home Page */
+
+   #banner{
+    
+    height: 80vh;
+ 
+    background-size: contain;
+    
+    width: 1160px;
+   }
+   #navbar{
+    padding: 40PX;
+   }
+   #navbar img{
+    width: 10%;
+    left: 0;
+   }
+   #navbar ul li a {
+    font-size: 20px;
+   }
+   .title{
+    text-align: center;
+   }
+   .title h1{
+    left: 400px;
+    top: 20%;
+    font-size: 100px;
+
+   }
+
+   .title p{
+    position:absolute;
+     top: 50%;
+     font-size: 30px;
+     margin-left: 400px;
+    
+   }
+   .buttons{
+    top: 70%;
+    left: 600px;
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size:20px ;
+   }
+   .introduction h3{
+    font-size: 40px;
+    margin-left: 100px;
+   }
+   .introduction h4{
+    font-size: 50px;
+   }
+   .wedding_hall{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+   
+   }
+   .wed_img img{
+    margin-top: 200px;
+    margin-left: 100px;
+    
+    width: 900px;
+   }
+   .wed_description h2{
+    margin-left: 40px;
+    font-size: 100px;
+    margin-left: 200px;
+
+   }
+   .wed_description p {
+    margin-left: 150px;
+    font-size: 60px;
+    line-height:60px;
+   }
+   .accomedation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+   
+   }
+   .acc_image img{
+    margin-top: 200px;
+    margin-left: 100px;
+    
+    
+    width: 900px;
+   }
+   .acc_description h2{
+    margin-left: 40px;
+    font-size: 100px;
+    margin-left: 200px;
+
+   }
+   .acc_description p {
+    margin-left: 150px;
+    font-size: 60px;
+    line-height:60px;
+   }
+   .resturantz{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+   
+   }
+   .rest_images img{
+    margin-top: 200px;
+    margin-left: 100px;
+    
+    width: 900px;
+   }
+   .resturantes h2{
+    margin-left: 40px;
+    font-size: 100px;
+    margin-left: 200px;
+
+   }
+   .resturantes p {
+    margin-left: 150px;
+    font-size: 60px;
+    line-height:60px;
+   }
+   .rest_images img{
+    margin-top: 200px;
+    margin-left: 100px;
+    
+    width: 900px;
+
+   }
+   .resturantes img{
+    width: 900px;
+    margin-left: 120px;
+   }
+  
+   
+   .advent h2{
+    margin-left: 40px;
+    font-size: 100px;
+    margin-left: 350px;
+
+   }
+   .advent p {
+    
+    font-size: 60px;
+    line-height:60px;
+    width: 100%;
+    margin-left: 400px;
+   }
+   .advent ul{
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: 50px;
+    
+   }
+   .advent img {
+    width: 900px;
+    margin-left: 120px;
+   }
+   
+  .comments{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+
+ }
+
+ .comments p{
+    line-height: 60px;
+    margin-left: 300px;
+ }
+ .endimg img {
+    margin-left: 390px;
+    width: 360px;
+ }
+
+ #contact{
+    width: 1160px;
+ }
+
+ /* resturant */
+ #rest{
+    width:1190px;
+ }
+ .asiandescript{
+    width: 1200px;
+ }
+ .asianfood img{
+    width: 49.5%;
+   
+    
+}
+.rest-bev img{
+    width: 49.5% ;
+}
+video{
+    max-width: 1170px;
+    margin: 10px;
+}
+.video h1 {
+   font-size: 50px;}
+
+   
+/* adventure page */
+.grid-item{
+    padding: 80px;
+   } 
+   .grid-container {
+    padding: 100px;
+   }
+   .grid-container img{
+    width: 300px;
+   }
+
+   /* BRANCHES */
+   .booking{
+    height: 700px;
+    width: 1200px;
+   }
+   .booking-topic h1{
+    font-size: 150px;
+    margin-left: 90px;
+   }
+   .booking-topic h2{
+    font-size: 70px;
+   }
+   .branches{
+    display: flex;
+    flex-wrap: wrap;
+    
+   }
+   .grid-item2 img{
+    width: 500px;
+    height:500px ;
+
+   }
+   .grid-item2 h4{
+    font-size: 70px;
+   }
+   .grid-item2 p{
+    font-size: 40px;
+    line-height: 60px;
+   }
+   .maps{
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+
+
+   }
+   .container{
+    padding-left: 200px;
+   }
+   table{
+    margin-left: 150px;
+    width: 900px;
+    
+   }
+   /* booking */
+   .checkin-out{
+    width: 1130px;
+   }
+   .container{
+    width: 600px;
+    margin-left: 50px;
+   }
+   
+
+
+}
+
