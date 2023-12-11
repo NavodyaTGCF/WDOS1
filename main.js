@@ -11,6 +11,7 @@ const totalCostDisplay = document.getElementById('totalCostDisplay');
 const promoCodeInput = document.getElementById('promoCode');
 const availabilityMessage = document.getElementById('availabilityMessage');
 
+
 // Calculating the Cost
 function calculateTotalCost() {
   const singleRooms = parseInt(singleRoomsInput.value) || 0;
@@ -28,7 +29,7 @@ function calculateTotalCost() {
   let totalCost = roomCost;
 
   
-  totalCostDisplay.textContent = `Total Cost for ${adults} Adults and ${aboveFive} Children above Five with${singleRooms} Single Rooms, ${doubleRooms} Double Rooms, ${tripleRooms} Triple Rooms and ${extraRooms} is:  $${totalCost}`;
+  totalCostDisplay.textContent = `Total Cost for ${adults} Adults and ${aboveFive} Children above Five with ${singleRooms} Single Rooms, ${doubleRooms} Double Rooms, ${tripleRooms} Triple Rooms and ${extraRooms} Extra Rooms is:  $${totalCost}`;
 }
 
 
@@ -80,6 +81,9 @@ function calculateLoyaltyPoints() {
 
 
 document.getElementById('loyalty_btn').addEventListener('click', calculateLoyaltyPoints);
+
+
+
 
 // Adventutre Booking Confirmation
 
@@ -140,6 +144,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+
 // Booking Confirmation
 document.addEventListener('DOMContentLoaded', function() {
   const bookNowButton = document.getElementById('bookNow');
@@ -176,6 +182,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+
+// Adding to Favourite and Storing in Local Storage
 document.addEventListener('DOMContentLoaded', function() {
   const addToFavouriteButton = document.getElementById('add_to_fav');
 
