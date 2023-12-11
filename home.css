@@ -730,77 +730,44 @@ tfoot {
 }
 
 /* BOOKING PAGE CSS Starts from here */
-.booking-topic{
-    margin-top: 90px;
-    text-align: center;
-    font-size: 70px;
-    padding: 30px;
+#fillingFORM{
+
+padding: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+   background-color: #d8cece;
+   color: #3b0d0d;
 }
 
-.checkin-out{
-    margin-top: 100px;
-    font-size: 30px;
-    background-color: #8d7373;
+ #coste,#loyalty_btn,#checkButton,#adventure_book_btn{
     padding: 10px;
-    color: #4b3338;
-    justify-content: center;
-}
-#month{
-    background-color: #dbc3c8;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: #3a2f19;
-    font-size: 15px;
     border-radius: 20px;
-    
-}
+    background-color: #d3b9b9;
+    color: #534e4f;
+    border-color: #e3dcdc;
+ }  
 
-.container{
-   background-color: #ebdddd;
-   margin-top: 40px;
-   margin-left: 40px;
-   margin-right: 40px;
-   padding-top: 30px;
-   padding-left: 400px;
-   padding-right: 300px;
-   padding-bottom: 60px;
-   line-height: 60px;
-   color: #1c1a1a;
-   font-size: 20px;
-}
-.container h2{
-    color: #846c6c;
-    text-align: center;
-    font-size: 35px;
-    padding-bottom: 20px;
-}
-
-.group{
-    background-color: #e7d4d8;
-    padding: 30px;
-    border-radius: 20px;
-    color: #281a1a;
+ #adventure_booking{
+    background-color: #e3dbdb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3a1a1a;
     
-}
-#text{
-    background-color: #f1e8e8;
-    border-radius: 10px;
-    border-color: #a1a0a0;
-    color: #281a1a;
-    
-}
-.submit{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 20px;
-    background-color: #efe4e6;
-    border-color: #ccc;
-    color: #3f2b2b;}
+ }
 
+#total_divin_cost,#bookNow,#add_to_fav{
+    padding: 10px;
+    background-color: #8a6d6d;
+    border-radius: 30px;
+    color: #dcd2d4;
+    border-color: #ffffff;
+}
+.booking-topicc{
+    color: #ae354d;
+    margin-top: 40px;
+    font-size: 100px;
+    margin-right: 10px;
+}
+ 
 
 
 
@@ -828,9 +795,17 @@ tfoot {
    #navbar img{
     width: 8%;
     left: 0;
+   
+   }
+   #navbar{
+    padding: 10px
+   }
+   #navbar ul li{
+    
    }
    #navbar ul li a {
     font-size: 14px;
+    display: inline;
    }
    .title{
     text-align: center;
@@ -1083,15 +1058,22 @@ video{
     
    }
    /* booking */
-   .checkin-out{
-    width: 1130px;
-   }
-   .container{
-    width: 600px;
-    margin-left: 50px;
-   }
+  .booking-topicc h1{
+    font-size: 30px;
+  }
+   #fillingFORM{
+    font-size: 20px;
    
-
+    
+    background-color: #fffcfc;
+    padding: 40px;
+   }
+   #adventure_booking{
+    background-color: #ffffff;
+    padding: 40px;
+    font-size: 20px;
+   }
+  
 
 }
 
