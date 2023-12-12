@@ -23,7 +23,7 @@ function calculateTotalCost() {
   const underFive = parseInt(underFiveInput.value) || 0;
 
   
-  const roomCost = (singleRooms * 25000 + doubleRooms * 35000 + tripleRooms * 45000 + extraRooms * 8000 +aboveFive*5000)* adults
+  const roomCost = ((singleRooms * 25000 + doubleRooms * 35000 + tripleRooms * 45000 + extraRooms * 8000 )* adults)+(aboveFive*5000)
    
 
   let totalCost = roomCost;
